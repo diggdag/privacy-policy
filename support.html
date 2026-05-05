@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート - パスワード管理帳PRO</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.7;
+        }
+        header {
+            background: #1d1d1f;
+            color: #fff;
+            padding: 32px 24px;
+            text-align: center;
+        }
+        header h1 { font-size: 24px; font-weight: 700; }
+        header p { font-size: 14px; color: #aaa; margin-top: 6px; }
+        .container { max-width: 720px; margin: 0 auto; padding: 32px 24px; }
+        section { background: #fff; border-radius: 12px; padding: 28px; margin-bottom: 24px; }
+        h2 { font-size: 18px; font-weight: 700; margin-bottom: 16px; border-left: 4px solid #007aff; padding-left: 12px; }
+        h3 { font-size: 15px; font-weight: 600; margin: 20px 0 8px; color: #333; }
+        p { font-size: 15px; margin-bottom: 10px; }
+        ul { padding-left: 20px; margin-bottom: 10px; }
+        li { font-size: 15px; margin-bottom: 6px; }
+        .contact-box {
+            background: #f0f6ff;
+            border: 1px solid #c0d8ff;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-top: 12px;
+        }
+        .contact-box a { color: #007aff; text-decoration: none; font-weight: 600; }
+        .faq-item { border-top: 1px solid #eee; padding-top: 16px; margin-top: 16px; }
+        .faq-item:first-child { border-top: none; padding-top: 0; margin-top: 0; }
+        .q { font-weight: 600; color: #007aff; margin-bottom: 6px; }
+        .a { color: #444; }
+        footer { text-align: center; font-size: 13px; color: #999; padding: 24px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>パスワード管理帳PRO</h1>
+    <p>サポートページ</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>アプリについて</h2>
+        <p>「パスワード管理帳PRO」は、AES-256暗号化データベースを採用した、広告なしのパスワード管理アプリです。</p>
+        <h3>主な機能</h3>
+        <ul>
+            <li><strong>AES-256暗号化</strong>：SQLCipherによりデータベース全体を暗号化。端末紛失・盗難時もデータを保護します。</li>
+            <li><strong>広告なし</strong>：有料アプリのため広告は一切表示されません。</li>
+            <li><strong>カテゴリ管理</strong>：アカウントをカテゴリで分類・絞り込みできます。</li>
+            <li><strong>検索機能</strong>：アカウント名でリストを素早く絞り込めます。</li>
+            <li><strong>パスワード生成</strong>：安全なランダムパスワードを自動生成できます。</li>
+            <li><strong>バックアップ・リストア</strong>：データをテキスト形式でバックアップし、復元できます。</li>
+            <li><strong>アプリロック</strong>：4桁のパスコードまたはFace ID / Touch IDでアプリを保護できます。</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>よくある質問 (FAQ)</h2>
+
+        <div class="faq-item">
+            <p class="q">Q. 無料版「パスワード管理帳」からデータを移行するにはどうすればいいですか？</p>
+            <p class="a">A. 2つの方法があります。<br>
+            【方法A（推奨）】無料版の設定画面にある「PRO版へ移行する」ボタンをタップし、その後PRO版を起動すると自動的にデータが移行されます。<br>
+            【方法B】無料版でバックアップテキストを作成し、PRO版のバックアップ・リストア画面でテキストを貼り付けて読み込んでください。</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="q">Q. 移行は必ずPRO版を使い始める前に行う必要がありますか？</p>
+            <p class="a">A. はい、PRO版でデータを追加・編集する前に移行されることを推奨します。移行後にPRO版でデータを追加してから移行を行うと、カテゴリ設定が上書きされる場合があります。</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="q">Q. バックアップテキストはどこに保存されますか？</p>
+            <p class="a">A. バックアップテキストはアプリ内の暗号化データベースに保存されます。手動でバックアップを作成する際は、テキストファイルとして任意の場所に書き出すことができます。バックアップテキストには全パスワードが平文で含まれるため、メールやクラウドストレージへの送信はお避けください。</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="q">Q. パスコードを忘れてしまいました。</p>
+            <p class="a">A. 大変申し訳ありませんが、セキュリティ上の理由からパスコードの復元手段はご用意しておりません。アプリを削除して再インストールすることでご利用いただけますが、データは消去されます。バックアップを事前にお取りください。</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="q">Q. データは安全ですか？</p>
+            <p class="a">A. アプリ内のデータはAES-256暗号化データベース（SQLCipher）で保護されており、暗号化キーはiOSのKeychain内に端末固有の方法で保管されています。端末外にデータが送信されることはありません。</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="q">Q. iPhone/iPadを機種変更した場合はどうなりますか？</p>
+            <p class="a">A. バックアップ機能でテキストを作成し、新しい端末でPRO版をインストール後、リストア画面でテキストを読み込んでください。</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="q">Q. アプリを削除するとデータも消えますか？</p>
+            <p class="a">A. はい、アプリを削除するとデータも消去されます。削除前に必ずバックアップをお取りください。</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>お問い合わせ</h2>
+        <p>ご不明点・不具合報告は下記メールアドレスまでお気軽にご連絡ください。</p>
+        <div class="contact-box">
+            <a href="mailto:ryokurachiryo@gmail.com">ryokurachiryo@gmail.com</a>
+        </div>
+        <p style="margin-top:12px; font-size:13px; color:#888;">※ お問い合わせへの返信にお時間をいただく場合があります。あらかじめご了承ください。</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 R.Kurachi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
